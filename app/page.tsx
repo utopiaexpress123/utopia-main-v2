@@ -5,6 +5,10 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
+import Chatbot from "@/components/home/chatbot";
+import { Twitter } from "react-feather";
+import { DEPLOY_URL } from "@/lib/constants";
+
 
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
@@ -93,8 +97,12 @@ export default async function Home() {
           />
         ))}
       </div>
+      <div>
+        <Chatbot />
+      </div>
     </>
   );
+
 }
 
 const features = [
