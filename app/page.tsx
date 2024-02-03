@@ -5,7 +5,7 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
-import Chatbot from "@/components/shared/chatbot";
+
 
 
 
@@ -96,9 +96,7 @@ export default async function Home() {
           />
         ))}
       </div>
-      <div>
-        <Chatbot />
-      </div>
+
     </>
   );
 
