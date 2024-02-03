@@ -34,22 +34,21 @@ export default async function Home() {
         >
           <Twitter className="h-5 w-5 text-[#1d9bf0]" />
           <p className="text-sm font-semibold text-[#1d9bf0]">
-          Let humans do, what they really want to do
+            Introducing Precedent
           </p>
         </a>
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          Let's do things out of adventure, curiosity, joy and passion.
-          We are not the robots anymore. We built one.
-          Get on the Express and go to the next level
+          Building blocks for your Next project
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          Get on the Express and go to the next level
+          An opinionated collection of components, hooks, and utilities for your
+          Next.js project.
         </p>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
