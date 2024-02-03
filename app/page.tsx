@@ -6,9 +6,6 @@ import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
 
-
-
-
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
     "https://api.github.com/repos/steven-tey/precedent",
@@ -63,7 +60,21 @@ export default async function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p>👨 Create your clone</p>
+            <svg
+              className="h-4 w-4 group-hover:text-black"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 4L20 20H4L12 4Z"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            <p>Deploy to Vercel</p>
           </a>
           <a
             className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
@@ -96,10 +107,8 @@ export default async function Home() {
           />
         ))}
       </div>
-
     </>
   );
-
 }
 
 const features = [
