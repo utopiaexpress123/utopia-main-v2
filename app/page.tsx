@@ -34,7 +34,7 @@ export default async function Home() {
         >
           <Facebook className="h-5 w-5 text-[#1d9bf0]" />
           <p className="text-sm font-semibold text-[#1d9bf0]">
-          Create your better version
+            Create your better version
           </p>
         </a>
         <h1
@@ -48,7 +48,7 @@ export default async function Home() {
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           Let's do things out of adventure, curiosity, joy and passion.
-We are not the robots anymore. We built one.
+          We are not the robots anymore. We built one.
         </p>
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
