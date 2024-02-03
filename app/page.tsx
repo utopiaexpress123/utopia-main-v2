@@ -6,7 +6,7 @@ import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
 import Chatbot from "@/components/shared/chatbot";
-import { Twitter } from "@/components/shared/icons/twitter";
+
 
 
 export default async function Home() {
