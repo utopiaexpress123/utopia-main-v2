@@ -5,9 +5,8 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
-import Chatbot from "@/components/home/chatbot";
-import { Twitter } from "react-feather";
-import { DEPLOY_URL } from "@/lib/constants";
+import Chatbot from "@/components/shared/chatbot";
+import { Twitter } from "@/components/shared/icons/twitter";
 
 
 export default async function Home() {
