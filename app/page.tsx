@@ -84,8 +84,8 @@ export default async function Home() {
             title={title}
             description={description}
             demo={
-              title === "Beautiful, reusable components" ? (
-                <ComponentGrid />
+              title === "Create your photogenic version!" ? (
+                //<ComponentGrid />
               ) : (
                 demo
               )
