@@ -69,31 +69,7 @@ export default async function Home() {
             large={large}
           />
         ))}
-        <div
-          className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
-          style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
-        >
-          <a
-            className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
-            href={DEPLOY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p>♂️ Create your Clone</p>
-          </a>
-          <a
-            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-            href="https://github.com/steven-tey/precedent"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github />
-            <p>
-              <span className="hidden sm:inline-block">Star on</span> GitHub{" "}
-              <span className="font-semibold">{nFormatter(stars)}</span>
-            </p>
-          </a>
-        </div>
+
       </div>
     </>
   );
@@ -141,3 +117,80 @@ const features = [
   },
 
 ];
+
+
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/Ryi8u7VZrsv
+ * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ */
+import { Button } from "@/components/ui/button"
+
+export default function Component() {
+  return (
+    <div className="grid grid-cols-3 gap-6 max-w-7xl mx-auto p-6">
+      <div className="shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <div className="flex-2">
+          <img
+            alt="Product Image"
+            className="object-cover w-full h-full"
+            height={300}
+            src="/placeholder.svg"
+            style={{
+              aspectRatio: "300/300",
+              objectFit: "cover",
+            }}
+            width={300}
+          />
+        </div>
+        <div className="flex-1 p-4 space-y-2">
+          <h2 className="font-bold text-lg">Product Name</h2>
+          <p className="text-gray-500">$99.99</p>
+          <Button>Add to Cart</Button>
+        </div>
+      </div>
+      <div className="shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <div className="flex-2">
+          <img
+            alt="Product Image"
+            className="object-cover w-full h-full"
+            height={300}
+            src="/placeholder.svg"
+            style={{
+              aspectRatio: "300/300",
+              objectFit: "cover",
+            }}
+            width={300}
+          />
+        </div>
+        <div className="flex-1 p-4 space-y-2">
+          <h2 className="font-bold text-lg">Product Name</h2>
+          <p className="text-gray-500">$99.99</p>
+          <Button>Add to Cart</Button>
+        </div>
+      </div>
+      <div className="shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <div className="flex-2">
+          <img
+            alt="Product Image"
+            className="object-cover w-full h-full"
+            height={300}
+            src="/placeholder.svg"
+            style={{
+              aspectRatio: "300/300",
+              objectFit: "cover",
+            }}
+            width={300}
+          />
+        </div>
+        <div className="flex-1 p-4 space-y-2">
+          <h2 className="font-bold text-lg">Product Name</h2>
+          <p className="text-gray-500">$99.99</p>
+          <Button>Add to Cart</Button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+
