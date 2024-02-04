@@ -5,7 +5,7 @@ import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
-import HeroPhoto from "@/components/home/hero-photos";
+import ComponentLibrarySection from '@/components/home/ComponentLibrarySection'; 
 
 
 export default async function Home() {
@@ -71,10 +71,13 @@ export default async function Home() {
           />
         ))}
       </div>
+      <ComponentLibrarySection />
     </>
   );
+
 }
-<HeroPhoto />
+
+
 const features = [
   {
     title: "Beautiful, reusable components",
