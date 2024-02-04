@@ -51,6 +51,24 @@ export default async function Home() {
         >
           Lets do things out of adventure, curiosity, joy and passion. We are not the robots anymore. We built one.
         </p>
+
+      </div>
+      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+        {features.map(({ title, description, demo, large }) => (
+          <Card
+            key={title}
+            title={title}
+            description={description}
+            demo={
+              title === "Create your photogenic version!" ? (
+                <ComponentGrid />
+              ) : (
+                demo
+              )
+            }
+            large={large}
+          />
+        ))}
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
@@ -76,23 +94,6 @@ export default async function Home() {
             </p>
           </a>
         </div>
-      </div>
-      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        {features.map(({ title, description, demo, large }) => (
-          <Card
-            key={title}
-            title={title}
-            description={description}
-            demo={
-              title === "Create your photogenic version!" ? (
-                <ComponentGrid />
-              ) : (
-                demo
-              )
-            }
-            large={large}
-          />
-        ))}
       </div>
     </>
   );
