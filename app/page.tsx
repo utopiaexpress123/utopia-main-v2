@@ -5,6 +5,7 @@ import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
 
+
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
     "https://api.github.com/repos/steven-tey/precedent",
@@ -113,6 +114,3 @@ const features = [
   },
 
 ];
-
-<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/f9805774-fb6c-439e-8d19-dec923fa753e/webchat/config.js" defer></script>
