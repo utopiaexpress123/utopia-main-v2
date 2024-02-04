@@ -34,6 +34,8 @@ const HeroPhoto = () => {
         </div>
       </div>
     </section>
+
+    <MyComponent />
   );
 };
 
